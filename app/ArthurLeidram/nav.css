@@ -1,0 +1,178 @@
+.switchTo {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+  img {
+    width: 3.75rem;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 1.5rem 1.5rem;
+    filter: drop-shadow(2px 4px 16px #000000bf);
+    cursor: pointer;
+    pointer-events: initial;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  img:hover {
+    filter: drop-shadow(2px 4px 16px #fed962bf);
+  }
+}
+
+button {
+  background-color: #d6d8e5 !important;
+  color: black !important;
+}
+button:hover {
+  background-color: #fed962 !important;
+}
+
+.heroBG {
+  width: 100vw;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("/images/background/LeidramBG.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  div {
+    margin-bottom: 6.25rem;
+    font-style: italic;
+    text-align: center;
+    filter: drop-shadow(2px 4px 16px #000000bf);
+    * {
+      width: max-content;
+      margin: 0 auto;
+      display: block;
+      background-color: #d6d8e5;
+      color: black;
+      transform: rotate(-3.75deg);
+      padding: 0 1.25rem;
+      margin-top: 0.25rem;
+    }
+  }
+}
+
+.vtuberIntro {
+  width: 100%;
+  position: relative;
+  padding: calc(15rem * 1.5) 15rem;
+  -webkit-backdrop-filter: blur(1.5rem);
+  backdrop-filter: blur(1.5rem);
+  border-radius: 1.5rem 1.5rem 0 0;
+  background-color: #d6d8e540;
+  color: black;
+}
+
+.meetTheSeiyuu {
+  width: 100%;
+  position: relative;
+  background-color: #d6d8e5;
+  background-image: url("https://cdn2.unrealengine.com/infinity-nikki-sea-of-stars-14-3840x2320-f77641ff783a.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  * {
+    margin: 0;
+  }
+  .seiyuuHandwrite {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    div {
+      position: absolute;
+      width: max-content;
+    }
+  }
+  .seiyuuOVL {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0;
+    img {
+      position: absolute;
+      height: auto;
+    }
+  }
+  .seiyuuContent {
+    color: white;
+    position: relative;
+    width: calc(15rem * 3.125);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15rem 0;
+    * {
+      display: block;
+    }
+    .seiyuuSocials * {
+      display: inline-block;
+      margin: 0 0.5rem;
+      cursor: pointer;
+    }
+    .seiyuuSocials *:hover {
+      color: #ffffff80;
+    }
+  }
+}
+
+.LeidramsPast {
+  width: 100%;
+  position: relative;
+  background-color: #d6d8e5;
+  color: black;
+  * {
+    margin: 0;
+  }
+  .title {
+    padding: calc(15rem * 0.125) 15rem 0 15rem;
+  }
+  .storySummary {
+    overflow-y: auto;
+    white-space: nowrap;
+    .LeidramChapter {
+      width: 30rem;
+      display: inline-block;
+      vertical-align: top;
+      margin: calc(15rem * 0.125);
+      border-radius: 1.5rem;
+      overflow: hidden;
+      background-color: #f2ddc2;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 11;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center top;
+        object-position: center top;
+      }
+      div {
+        display: block;
+        padding: calc(15rem * calc(0.03125 * 4)) calc(15rem * 0.125) calc(15rem * calc(0.0625 * 3)) calc(15rem * 0.125);
+        white-space: initial;
+      }
+    }
+  }
+}

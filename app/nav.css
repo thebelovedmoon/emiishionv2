@@ -1,0 +1,82 @@
+.pickAVTuber {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 10;
+  h1 {
+    background-color: teal;
+    padding: 0.75rem 1.25rem;
+    margin-top: 3.75rem;
+    height: fit-content;
+    text-align: center;
+    pointer-events: initial;
+    filter: drop-shadow(2px 4px 16px #000000bf);
+  }
+}
+
+.vtuberSelector {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  * {
+    display: block;
+  }
+  .EmiiShion {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(12rem);
+    -moz-transform: translateX(12rem);
+    -ms-transform: translateX(12rem);
+    -o-transform: translateX(12rem);
+    transform: translateX(12rem);
+    pointer-events: none;
+    img {
+      left: 50%;
+      -webkit-transform: translateX(-50%) !important;
+      -moz-transform: translateX(-50%) !important;
+      -ms-transform: translateX(-50%) !important;
+      -o-transform: translateX(-50%) !important;
+      transform: translateX(-50%) !important;
+    }
+  }
+  .ArthurLeidram {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(-8rem);
+    -moz-transform: translateX(-8rem);
+    -ms-transform: translateX(-8rem);
+    -o-transform: translateX(-8rem);
+    transform: translateX(-8rem);
+    pointer-events: none;
+    img {
+      left: 50%;
+      -webkit-transform: translateX(-50%) !important;
+      -moz-transform: translateX(-50%) !important;
+      -ms-transform: translateX(-50%) !important;
+      -o-transform: translateX(-50%) !important;
+      transform: translateX(-50%) !important;
+    }
+  }
+  img {
+    height: auto;
+    position: absolute;
+    bottom: 0 !important;
+    opacity: 0.5;
+    pointer-events: initial !important;
+    cursor: pointer;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}

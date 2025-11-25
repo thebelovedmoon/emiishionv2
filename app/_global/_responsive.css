@@ -1,0 +1,87 @@
+/* IMPORTANT: responsive fontsize */
+@media screen and (max-width: 540px) {
+  body {
+    font-size: normal;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 1080px) {
+  body {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 1080px) and (max-width: 1620px) {
+  body {
+    font-size: larger;
+  }
+}
+@media screen and (min-width: 1620px) and (max-width: 2160px) {
+  body {
+    font-size: x-large;
+  }
+}
+@media screen and (min-width: 2160px) {
+  body {
+    font-size: xx-large;
+  }
+}
+
+/* mobile mode v1 */
+@media screen and (max-width: 1280px) {
+  footer {
+    padding: 0 !important;
+    grid-template-columns: 100% !important;
+    .footTxt {
+      justify-content: center;
+      text-align: center;
+      div {
+        margin: calc(15rem * 0.125) !important;
+        .footSocials {
+          margin: 0 !important;
+          * {
+            margin: 0 0.5rem 0 0.5rem !important;
+          }
+        }
+      }
+    }
+    img {
+      width: calc(30rem * 0.75) !important;
+      margin-top: 0 !important;
+    }
+  }
+  .vtuberIntro {
+    padding: 15rem calc(15rem * 0.125) !important;
+  }
+  .meetTheSeiyuu .seiyuuOVL {
+    display: none;
+  }
+  .meetTheSeiyuu .seiyuuHandwrite {
+    display: none;
+  }
+  .LeidramsPast .title {
+    padding: calc(15rem * 0.125) calc(15rem * 0.125) 0 calc(15rem * 0.125) !important;
+  }
+  .LeidramChapter {
+    width: calc(30rem * 0.625) !important;
+  }
+  .reginaPromote .reginaSplit img {
+    aspect-ratio: 16 / calc(16 * 1.5) !important;
+  }
+  .EmiiAURORA {
+    grid-template-columns: 100% !important;
+    direction: ltr !important;
+    .AURORAtxt {
+      justify-content: center !important;
+      text-align: center !important;
+      div {
+        margin: 3rem calc(15rem * 0.125) !important;
+        img {
+          width: 15rem !important;
+        }
+      }
+    }
+    .AURORApink img {
+      width: 37.5rem !important;
+      margin-top: 0 !important;
+    }
+  }
+}

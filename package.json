@@ -1,0 +1,29 @@
+{
+  "name": "emiishionv2",
+  "version": "2.9.15",
+  "description": "will you join the Reincarnated Phoenix Queen and the Cursed Legend on the Round Table?👑🐣",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "npm update && next dev",
+    "lint": "eslint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@pixiv/three-vrm": "^3.4.4",
+    "@vercel/analytics": "^1.5.0",
+    "animejs": "^4.2.2",
+    "next": "16.0.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "three": "^0.181.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.1",
+    "typescript": "^5"
+  }
+}
