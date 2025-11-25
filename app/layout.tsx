@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { Fahkwang } from "next/font/google"
 
 import "@/app/_global/_main.css";
 import "@/app/nav.css";
+
+const fahkwang = Fahkwang({
+  weight: ["200", "300", "400", "500", "600", "700"]
+});
 
 export const metadata: Metadata = {
   title: "絵美紫苑とアーサー王👑🐣",
@@ -33,7 +38,7 @@ export default function RootLayout({
         <meta name="msapplication-navbutton-color" content="#008080" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#008080" />
       </head>
-      <body className={`antialiased`}>
+      <body className={`${fahkwang.className} antialiased`}>
         {children}
         <Analytics />
       </body>

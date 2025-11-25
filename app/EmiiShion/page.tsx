@@ -1,7 +1,26 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import {
+  Zen_Kurenaido,
+  Parisienne,
+  Noto_Serif_Display,
+} from "next/font/google";
+
 import { ReginaPromote } from "@/app/_global/_global";
+
+const zenKurenaido = Zen_Kurenaido({
+  weight: ["400"],
+});
+
+const parisienne = Parisienne({
+  weight: ["400"],
+});
+
+const notoSerifDisplay = Noto_Serif_Display({
+  weight: ["600"],
+  style: ["italic"],
+});
 
 export default function EmiiShion() {
   const meetTheSeiyuuRef = useRef<HTMLDivElement>(null);
@@ -96,10 +115,12 @@ export default function EmiiShion() {
             Emii Shion
           </h1>
           <span
+            className={zenKurenaido.className}
             style={{
               clipPath:
                 "polygon(calc(3.75px * 2) 0, 100% 0, calc(100% - calc(3.75px * 2)) 100%, 0 100%)",
               fontWeight: "bold",
+              fontStyle: "italic",
             }}
           >
             絵美紫苑🐣
@@ -127,18 +148,20 @@ export default function EmiiShion() {
       <div ref={meetTheSeiyuuRef} className="meetTheSeiyuu">
         <div className="seiyuuHandwrite">
           <div
+            className={notoSerifDisplay.className}
             style={{
               bottom: "calc(15rem * 0.375)",
               left: "calc(15rem * 0.5)",
               color: "#3d374c",
               fontSize: "calc(15rem * 0.15625)",
               transform: "rotate(-5deg)",
+              letterSpacing: "-0.08rem",
             }}
           >
             <p>may you be blessed dearly,</p>
             <h1
+              className={parisienne.className}
               style={{
-                fontFamily: `"Parisienne", cursive`,
                 fontWeight: "normal",
               }}
             >

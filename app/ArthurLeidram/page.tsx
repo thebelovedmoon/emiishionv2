@@ -1,7 +1,17 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-import { ReginaPromote } from "../_global/_global";
+import { Zen_Kurenaido, Parisienne } from "next/font/google";
+
+import { ReginaPromote } from "@/app/_global/_global";
+
+const zenKurenaido = Zen_Kurenaido({
+  weight: ["400"],
+});
+
+const parisienne = Parisienne({
+  weight: ["400"],
+});
 
 export default function ArthurLeidram() {
   const meetTheSeiyuuRef = useRef<HTMLDivElement>(null);
@@ -96,10 +106,12 @@ export default function ArthurLeidram() {
             Arthur Regina Leidram
           </h1>
           <span
+            className={zenKurenaido.className}
             style={{
               clipPath:
                 "polygon(calc(3.75px * 2) 0, 100% 0, calc(100% - calc(3.75px * 2)) 100%, 0 100%)",
               fontWeight: "bold",
+              fontStyle: "italic",
             }}
           >
             アーサー王👑
@@ -138,8 +150,8 @@ export default function ArthurLeidram() {
           >
             <p>may the Miraland shine above all,</p>
             <h1
+              className={parisienne.className}
               style={{
-                fontFamily: `"Parisienne", cursive`,
                 fontWeight: "normal",
               }}
             >

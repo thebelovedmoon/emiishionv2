@@ -1,5 +1,4 @@
 /* root css imports */
-@import url("@/app/_global/_fonts.css");
 @import url("@/app/_global/_responsive.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css");
 
@@ -25,7 +24,6 @@ html {
   color: white;
 }
 body {
-  font-family: "Fahkwang", "Zen Kurenaido", sans-serif;
   background-image: url("/images/Leidram_bg.png");
   background-size: cover;
   background-position: center center;
