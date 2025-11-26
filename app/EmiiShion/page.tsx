@@ -252,10 +252,24 @@ export default function EmiiShion() {
                   }}
                 ></i>
                 <i
+                  className="bi bi-facebook"
+                  title="facebook"
+                  onClick={() => {
+                    window.open("https://web.facebook.com/thebelovedmoon");
+                  }}
+                ></i>
+                <i
                   className="bi bi-instagram"
                   title="instagram"
                   onClick={() => {
                     window.open("https://instagram.com/themoon_follow");
+                  }}
+                ></i>
+                <i
+                  className="bi bi-threads"
+                  title="threads"
+                  onClick={() => {
+                    window.open("https://threads.com/themoon_follow");
                   }}
                 ></i>
                 <i
@@ -277,6 +291,20 @@ export default function EmiiShion() {
                   title="tiktok"
                   onClick={() => {
                     window.open("https://tiktok.com/@themoon_follow");
+                  }}
+                ></i>
+                <i
+                  className="bi bi-reddit"
+                  title="reddit"
+                  onClick={() => {
+                    window.open("https://reddit.com/user/thebelovedmoon");
+                  }}
+                ></i>
+                <i
+                  className="bi bi-soundwave"
+                  title="soundcloud"
+                  onClick={() => {
+                    window.open("https://soundcloud.com/thebelovedmoon");
                   }}
                 ></i>
                 <i

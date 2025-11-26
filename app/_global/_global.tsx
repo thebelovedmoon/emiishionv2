@@ -33,6 +33,13 @@ export const Footer: React.FC = () => {
               }}
             ></i>
             <i
+              className="bi bi-discord"
+              title="discord"
+              onClick={() => {
+                window.open("https://discord.gg/bwPvTbqwD6");
+              }}
+            ></i>
+            <i
               className="bi bi-envelope-at-fill"
               title="email"
               onClick={() => {
