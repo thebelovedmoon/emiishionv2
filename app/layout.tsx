@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Fahkwang } from "next/font/google"
 
 import "@/app/_global/_main.css";
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body className={`${fahkwang.className} antialiased`}>
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
