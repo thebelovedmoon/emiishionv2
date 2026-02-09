@@ -87,7 +87,7 @@ export default function ArthurLeidram() {
     <main>
       <div className="switchTo">
         <img
-          src="/web/pfp_Emii.png"
+          src="/web/Emii2026.png"
           alt=""
           title="switch to Emii Shion"
           onClick={() => {

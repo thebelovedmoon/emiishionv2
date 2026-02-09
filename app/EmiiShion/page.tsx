@@ -96,7 +96,7 @@ export default function EmiiShion() {
     <main>
       <div className="switchTo">
         <img
-          src="/web/pfp_Leidram.png"
+          src="/web/Leidram2026.png"
           alt=""
           title="switch to Arthur Regina Leidram"
           onClick={() => {
