@@ -49,11 +49,20 @@ export const Footer: React.FC = () => {
           </div>
           <br />
           <p style={{ fontSize: "0.625em" }}>
-            ©2022 vtNet, a tbmassoc network&ensp;
-            <i
-              style={{ display: "inline-block" }}
-              className="bi bi-moon-fill"
-            ></i>
+            ©2022{" "}
+            <a
+              rel="noopener noreferrer"
+              className="vtNetLnk"
+              onClick={() => {
+                window.open("https://tbmassoc.github.io/vtNet");
+              }}
+            >
+              vtNet, a tbmassoc network&ensp;
+              <i
+                style={{ display: "inline-block" }}
+                className="bi bi-moon-fill"
+              ></i>
+            </a>
           </p>
         </div>
       </div>

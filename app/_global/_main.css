@@ -51,6 +51,10 @@ footer {
     display: block;
     padding: 0;
   }
+  a {
+    cursor: pointer;
+    display: initial;
+  }
   .footTxt {
     width: 100%;
     max-height: 100%;
