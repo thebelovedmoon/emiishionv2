@@ -17,6 +17,25 @@ export default function ArthurLeidram() {
   const meetTheSeiyuuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    document
+      .querySelector("link[rel='shortcut icon']")
+      ?.setAttribute("href", "/web/pfp_Leidram.png");
+    document
+      .querySelector("link[rel='apple-touch-icon']")
+      ?.setAttribute("href", "/web/pfp_Leidram.png");
+    document
+      .querySelector("meta[name='theme-color']")
+      ?.setAttribute("content", "#d6d8e5");
+    document
+      .querySelector("meta[name='msapplication-TileColor']")
+      ?.setAttribute("content", "#d6d8e5");
+    document
+      .querySelector("meta[name='msapplication-navbutton-color']")
+      ?.setAttribute("content", "#d6d8e5");
+    document
+      .querySelector("meta[name='apple-mobile-web-app-status-bar-style']")
+      ?.setAttribute("content", "#d6d8e5");
+
     const mTS_el = meetTheSeiyuuRef.current;
 
     const obsvr1 = new IntersectionObserver(
@@ -27,27 +46,27 @@ export default function ArthurLeidram() {
               .querySelector(".meetTheSeiyuu .seiyuuOVL")
               ?.setAttribute(
                 "style",
-                `-webkit-transform: translateY(3rem); -moz-transform: translateY(3rem); -ms-transform: translateY(3rem); -o-transform: translateY(3rem); transform: translateY(3rem);`
+                `-webkit-transform: translateY(3rem); -moz-transform: translateY(3rem); -ms-transform: translateY(3rem); -o-transform: translateY(3rem); transform: translateY(3rem);`,
               );
             document
               .querySelector(".meetTheSeiyuu .seiyuuHandwrite")
               ?.setAttribute(
                 "style",
-                `-webkit-transform: translateY(3rem); -moz-transform: translateY(3rem); -ms-transform: translateY(3rem); -o-transform: translateY(3rem); transform: translateY(3rem);`
+                `-webkit-transform: translateY(3rem); -moz-transform: translateY(3rem); -ms-transform: translateY(3rem); -o-transform: translateY(3rem); transform: translateY(3rem);`,
               );
             setTimeout(() => {
               document
                 .querySelector(".meetTheSeiyuu .seiyuuOVL")
                 ?.setAttribute(
                   "style",
-                  `opacity: 1; -webkit-transform: initial; -moz-transform: initial; -ms-transform: initial; -o-transform: initial; transform: initial; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease;`
+                  `opacity: 1; -webkit-transform: initial; -moz-transform: initial; -ms-transform: initial; -o-transform: initial; transform: initial; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease;`,
                 );
               setTimeout(() => {
                 document
                   .querySelector(".meetTheSeiyuu .seiyuuHandwrite")
                   ?.setAttribute(
                     "style",
-                    `opacity: 1; -webkit-transform: initial; -moz-transform: initial; -ms-transform: initial; -o-transform: initial; transform: initial; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease;`
+                    `opacity: 1; -webkit-transform: initial; -moz-transform: initial; -ms-transform: initial; -o-transform: initial; transform: initial; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease;`,
                   );
               }, 375);
             }, 125);
@@ -56,20 +75,20 @@ export default function ArthurLeidram() {
               .querySelector(".meetTheSeiyuu .seiyuuOVL")
               ?.setAttribute(
                 "style",
-                `opacity: 0; -webkit-transform: translateY(-3rem); -moz-transform: translateY(-3rem); -ms-transform: translateY(-3rem); -o-transform: translateY(-3rem); transform: translateY(-3rem); -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease;`
+                `opacity: 0; -webkit-transform: translateY(-3rem); -moz-transform: translateY(-3rem); -ms-transform: translateY(-3rem); -o-transform: translateY(-3rem); transform: translateY(-3rem); -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease;`,
               );
             setTimeout(() => {
               document
                 .querySelector(".meetTheSeiyuu .seiyuuHandwrite")
                 ?.setAttribute(
                   "style",
-                  `opacity: 0; -webkit-transform: translateY(-3rem); -moz-transform: translateY(-3rem); -ms-transform: translateY(-3rem); -o-transform: translateY(-3rem); transform: translateY(-3rem); -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease;`
+                  `opacity: 0; -webkit-transform: translateY(-3rem); -moz-transform: translateY(-3rem); -ms-transform: translateY(-3rem); -o-transform: translateY(-3rem); transform: translateY(-3rem); -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease;`,
                 );
             }, 375);
           }
         });
       },
-      { threshold: 0.75 }
+      { threshold: 0.75 },
     );
 
     if (mTS_el) {
@@ -208,7 +227,7 @@ export default function ArthurLeidram() {
                   title="amuleto profile"
                   onClick={() => {
                     window.open(
-                      "https://amuleto.jp/talents/nashimotohiori.html"
+                      "https://amuleto.jp/talents/nashimotohiori.html",
                     );
                   }}
                 ></i>

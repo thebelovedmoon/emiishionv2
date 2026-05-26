@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Fahkwang } from "next/font/google"
+import { Fahkwang } from "next/font/google";
 
 import "@/app/_global/_main.css";
 import "@/app/nav.css";
 
 const fahkwang = Fahkwang({
-  weight: ["200", "300", "400", "500", "600", "700"]
+  weight: ["200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {

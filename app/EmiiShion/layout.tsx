@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Fahkwang } from "next/font/google"
+import { Fahkwang } from "next/font/google";
 
 import "@/app/_global/_main.css";
 import "@/app/EmiiShion/nav.css";
 import { Footer } from "@/app/_global/_global";
 
 const fahkwang = Fahkwang({
-  weight: ["200", "300", "400", "500", "600", "700"]
+  weight: ["200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
+        {/* <link
           rel="shortcut icon"
           href="/web/pfp_Emii.png"
           type="image/x-icon"
@@ -38,7 +38,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#fed962" />
         <meta name="msapplication-TileColor" content="#fed962" />
         <meta name="msapplication-navbutton-color" content="#fed962" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#fed962" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#fed962" /> */}
       </head>
       <body className={`${fahkwang.className} antialiased`}>
         {children}
