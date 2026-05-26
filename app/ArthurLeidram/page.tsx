@@ -91,7 +91,7 @@ export default function ArthurLeidram() {
           alt=""
           title="switch to Emii Shion"
           onClick={() => {
-            window.open("/EmiiShion", "_blank");
+            window.location.replace("/EmiiShion");
           }}
         />
       </div>

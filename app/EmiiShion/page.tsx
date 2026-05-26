@@ -100,7 +100,7 @@ export default function EmiiShion() {
           alt=""
           title="switch to Arthur Regina Leidram"
           onClick={() => {
-            window.open("/ArthurLeidram", "_blank");
+            window.location.replace("/ArthurLeidram");
           }}
         />
       </div>
