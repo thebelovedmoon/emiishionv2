@@ -133,7 +133,7 @@ export default function ArthurLeidram() {
               fontStyle: "italic",
             }}
           >
-            アーサー王👑
+            アーサー王&#x1f451;
           </span>
           <br />
           <p

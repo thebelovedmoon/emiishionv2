@@ -142,7 +142,7 @@ export default function EmiiShion() {
               fontStyle: "italic",
             }}
           >
-            絵美紫苑🐣
+            絵美紫苑&#x1f423;
           </span>
           <br />
           <p
@@ -165,52 +165,71 @@ export default function EmiiShion() {
         </h1>
       </div>
       <div className="hinamoteNotice">
-        <div className="hinaMoteCtr">
-          <div className="hinamotes">
-            <img
-              src="/images/hinamotes/hinasuHeart.png"
-              alt="emiish1HinasuHeart"
-            />
-            <img src="/images/hinamotes/hinasuPat.png" alt="emiish1HinasuPat" />
-            <img
-              src="/images/hinamotes/hinasuCozy.png"
-              alt="eiish1HinasuCozy"
-            />
-            <img
-              src="/images/hinamotes/hinasuPeek.png"
-              alt="eiish1HinasuPeek"
-            />
-            <img
-              src="/images/hinamotes/hinaouNyoom.png"
-              alt="eiish1HinaouNyoom"
-            />
+        <div className="hinamoteFill">
+          <div className="hinaMoteCtr">
+            <div className="hinamotes">
+              <img
+                className="hinamote1"
+                src="/images/hinamotes/hinasuHeart.png"
+                alt="emiish1HinasuHeart"
+                title="emiish1HinasuHeart"
+              />
+              <img
+                className="hinamote2"
+                src="/images/hinamotes/hinasuPat.png"
+                alt="emiish1HinasuPat"
+                title="emiish1HinasuPat"
+              />
+              <img
+                className="hinamote3"
+                src="/images/hinamotes/hinasuCozy.png"
+                alt="eiish1HinasuCozy"
+                title="eiish1HinasuCozy"
+              />
+              <img
+                className="hinamote4"
+                src="/images/hinamotes/hinasuPeek.png"
+                alt="eiish1HinasuPeek"
+                title="eiish1HinasuPeek"
+              />
+              <img
+                className="hinamote5"
+                src="/images/hinamotes/hinaouNyoom.png"
+                alt="eiish1HinaouNyoom"
+                title="eiish1HinaouNyoom"
+              />
+            </div>
+            <div
+              style={{
+                width: "100%",
+                height: "3.75rem",
+              }}
+            ></div>
+            <h2>
+              preserving the{" "}
+              <span style={{ color: "#f0a9a9" }}>Third Maria&#x1f338;</span>
+              &apos;s legacy
+            </h2>
+            <br />
+            <p>
+              as part of an ongoing effort to recognize the efforts of the Third
+              Maria&#x1f338; of VTresMarias -- Hina Oujo, her emotes will be
+              gradually available to use on the EmiiShion Twitch channel!!
+            </p>
+            <br />
+            <p>
+              more emotes will be added as part of tier 1 sub, including the
+              animated ones!!
+            </p>
+            <br />
+            <button
+              onClick={() => {
+                window.open("https://twitch.tv/EmiiShion/subscribe");
+              }}
+            >
+              subscribe to unlock more
+            </button>
           </div>
-          <div
-            style={{
-              width: "100%",
-              height: "3.75rem",
-            }}
-          ></div>
-          <h2>preserving the Third Maria🌸&apos;s legacy</h2>
-          <br />
-          <p>
-            as part of an ongoing effort to recognize the efforts of the Third
-            Maria🌸 of VTresMarias -- Hina Oujo, her emotes will be gradually
-            available to use on the EmiiShion Twitch channel!!
-          </p>
-          <br />
-          <p>
-            more emotes will be added as part of tier 1 sub, including the
-            animated ones!!
-          </p>
-          <br />
-          <button
-            onClick={() => {
-              window.open("https://twitch.tv/EmiiShion/subscribe");
-            }}
-          >
-            subscribe to unlock more
-          </button>
         </div>
       </div>
       <div ref={meetTheSeiyuuRef} className="meetTheSeiyuu">
@@ -249,7 +268,7 @@ export default function EmiiShion() {
             }}
             src="https://pbs.twimg.com/media/GiAU6lybYAAvV0D?format=jpg&name=4096x4096"
             alt=""
-            title="aside from vtubing, she also became known as a cosplayer who goes by the title of the Incumbent First CosMaria🍃💐 -- a title that she proudly held unto since her first stint last year-end of 2023. notably, she's mostly known for her representation as the IRL version of her vtuber self."
+            title="aside from vtubing, she also became known as a cosplayer who goes by the title of the Incumbent First CosMaria&#x1f343;💐 -- a title that she proudly held unto since her first stint last year-end of 2023. notably, she's mostly known for her representation as the IRL version of her vtuber self."
           />
           <img
             style={{
@@ -290,7 +309,7 @@ export default function EmiiShion() {
               <p>meet the Benefactor</p>
               <br />
               <h1>Aga-chuu</h1>
-              <p style={{ fontWeight: "bold" }}>the First Maria🍃</p>
+              <p style={{ fontWeight: "bold" }}>the First Maria&#x1f343;</p>
               <br />
               <h3 style={{ fontStyle: "italic" }}>
                 the primary benefactor of the Marias.
@@ -397,7 +416,8 @@ export default function EmiiShion() {
               has a deep history with the management of Emii Shion before its
               unveiling as the Alternative; most notably that it was previously
               a part of a vtuber agency wherein it was commandeered by her close
-              friend -- the Third Maria🌸 -- before it was formally handed over.
+              friend -- the Third Maria&#x1f338; -- before it was formally
+              handed over.
             </p>
             <br />
             <p>
@@ -439,7 +459,7 @@ export default function EmiiShion() {
             <p>
               and during her initial tenure, she was being taken care of by a
               familiar face of the vtubing industry at the time: the Third
-              Maria🌸 --{" "}
+              Maria&#x1f338; --{" "}
               <span
                 onClick={() => {
                   window.open("https://thebelovedmoon.github.io/hinaoujo");
@@ -455,7 +475,7 @@ export default function EmiiShion() {
               had forced her to prematurely retire from AURORA -- with her
               presence in the shadows, unable to be seen; until the formal
               handover through mutual connections to Aga-chuu, the First
-              Maria🍃.
+              Maria&#x1f343;.
             </p>
             <br />
             <p>

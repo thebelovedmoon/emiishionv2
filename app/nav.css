@@ -13,7 +13,7 @@
     height: fit-content;
     text-align: center;
     pointer-events: initial;
-    filter: drop-shadow(2px 4px 16px #000000bf);
+    filter: drop-shadow(2px 4px 16px #00000080);
   }
 }
 

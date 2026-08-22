@@ -118,7 +118,8 @@ export const ReginaPromote: React.FC = () => {
           <p>
             <b>their story is about to be unveiled soon..</b>
           </p>
-          {/* <button>explore their story</button> */}
+          {/* <br />
+          <button>explore their story</button> */}
         </div>
       </div>
     </div>

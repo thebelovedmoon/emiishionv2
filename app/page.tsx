@@ -11,7 +11,7 @@ export default function Home() {
           <img
             src="/images/model/LeidramVroid.png"
             alt=""
-            title="Arthur Regina Leidram, the Second Regina👑"
+            title="Arthur Regina Leidram, the Second Regina&#x1f451;"
             onClick={() => {
               window.open("ArthurLeidram");
             }}
@@ -21,7 +21,7 @@ export default function Home() {
           <img
             src="/images/model/EmiiVroid.png"
             alt=""
-            title="Emii Shion, the First Regina🐣"
+            title="Emii Shion, the First Regina&#x1f423;"
             onClick={() => {
               window.open("EmiiShion");
             }}
