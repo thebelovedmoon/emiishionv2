@@ -46,18 +46,27 @@ export const Footer: React.FC = () => {
                 window.open("mailto:EmiiShionALVR@gmail.com", "_self");
               }}
             ></i>
+            {/* <i
+              className="bi bi-moon-fill"
+              title="our vtNet offering"
+              onClick={() => {
+                window.open("https://tbmassoc.github.io/vtNet/emiishion");
+              }}
+            ></i> */}
           </div>
           <br />
-          <p style={{ fontSize: "0.625em" }}>
+          <p className="vtNet-foot">
             ©2022{" "}
             <a
               rel="noopener noreferrer"
               className="vtNetLnk"
               onClick={() => {
-                window.open("https://tbmassoc.github.io/vtNet");
+                // window.open("https://tbmassoc.github.io/vtNet");
+                window.open("https://tbmassoc.github.io/vtNet/emiishion");
               }}
+              title="explore our vtNet offering"
             >
-              vtNet, a tbmassoc network&ensp;
+              vt<b className="vtNet-netDesig">Net</b>, a tbmassoc network&ensp;
               <i
                 style={{ display: "inline-block" }}
                 className="bi bi-moon-fill"

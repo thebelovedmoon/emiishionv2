@@ -252,8 +252,8 @@ export default function ArthurLeidram() {
             <p>
               alongside her stint as the Leidram, she is also known for a few
               notable characters: Florine from &quot;Machine Child&quot;,
-              Okuzawa from &quot;Tamagawa Wants to Be a Cat&quot; and the
-              infamous Nikki from &quot;Infinity Nikki&quot;!
+              Okuzawa from &quot;Tamagawa Wants to Be a Cat&quot; and Nikki from
+              &quot;Infinity Nikki&quot;!
             </p>
           </div>
         </div>

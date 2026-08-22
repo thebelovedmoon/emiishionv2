@@ -82,7 +82,7 @@ button:hover {
   width: 100%;
   position: relative;
   background-color: #3d374c;
-  background-image: url("https://vtresmarias.github.io/assets/images/backgrounds/vtm_3.png");
+  background-image: url("https://vtresmarias.github.io/assets/images/backgrounds/vtm_bg_3.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -147,7 +147,7 @@ button:hover {
   display: -moz-grid;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   direction: rtl;
   * {
     display: block;
@@ -194,4 +194,43 @@ button:hover {
       margin-top: 2.5rem;
     }
   }
+}
+
+.hinamoteNotice {
+  position: relative;
+  background-color: #f0a9a9;
+  background-image: url("https://vtresmarias.github.io/assets/images/backgrounds/vtm_bg_2.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #3d374c;
+  padding: 7.5rem 1rem;
+  text-align: center;
+  .hinaMoteCtr {
+    width: 50rem;
+    max-width: 100%;
+    margin: 0 auto;
+    .hinamotes {
+      width: max-content;
+      max-width: 100%;
+      margin: 0 auto;
+      display: -moz-grid;
+      display: -ms-grid;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1rem;
+      img {
+        width: 6.25rem;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        -o-object-fit: contain;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.vtNet-netDesig {
+  color: #fed962 !important;
 }

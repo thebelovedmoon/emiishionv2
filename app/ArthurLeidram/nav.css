@@ -170,9 +170,14 @@ button:hover {
       }
       div {
         display: block;
-        padding: calc(15rem * calc(0.03125 * 4)) calc(15rem * 0.125) calc(15rem * calc(0.0625 * 3)) calc(15rem * 0.125);
+        padding: calc(15rem * calc(0.03125 * 4)) calc(15rem * 0.125)
+          calc(15rem * calc(0.0625 * 3)) calc(15rem * 0.125);
         white-space: initial;
       }
     }
   }
+}
+
+.vtNet-netDesig {
+  color: #d6d8e5 !important;
 }

@@ -164,6 +164,55 @@ export default function EmiiShion() {
           started -- a promise that she made to someone she cared about.
         </h1>
       </div>
+      <div className="hinamoteNotice">
+        <div className="hinaMoteCtr">
+          <div className="hinamotes">
+            <img
+              src="/images/hinamotes/hinasuHeart.png"
+              alt="emiish1HinasuHeart"
+            />
+            <img src="/images/hinamotes/hinasuPat.png" alt="emiish1HinasuPat" />
+            <img
+              src="/images/hinamotes/hinasuCozy.png"
+              alt="eiish1HinasuCozy"
+            />
+            <img
+              src="/images/hinamotes/hinasuPeek.png"
+              alt="eiish1HinasuPeek"
+            />
+            <img
+              src="/images/hinamotes/hinaouNyoom.png"
+              alt="eiish1HinaouNyoom"
+            />
+          </div>
+          <div
+            style={{
+              width: "100%",
+              height: "3.75rem",
+            }}
+          ></div>
+          <h2>preserving the Third Maria🌸&apos;s legacy</h2>
+          <br />
+          <p>
+            as part of an ongoing effort to recognize the efforts of the Third
+            Maria🌸 of VTresMarias -- Hina Oujo, her emotes will be gradually
+            available to use on the EmiiShion Twitch channel!!
+          </p>
+          <br />
+          <p>
+            more emotes will be added as part of tier 1 sub, including the
+            animated ones!!
+          </p>
+          <br />
+          <button
+            onClick={() => {
+              window.open("https://twitch.tv/EmiiShion/subscribe");
+            }}
+          >
+            subscribe to unlock more
+          </button>
+        </div>
+      </div>
       <div ref={meetTheSeiyuuRef} className="meetTheSeiyuu">
         <div className="seiyuuHandwrite">
           <div
@@ -362,9 +411,9 @@ export default function EmiiShion() {
             <br />
             <p>
               alongside the aforementioned, she is also the benefactor of other
-              characters that she manually converted into vtubers through vroid:
-              Sumiyoi Sakura from &quot;Ojou-sama Yomeiri Kousou&quot;, Senri
-              Mana from &quot;Princess Connect! Re:Dive&quot;, and Chloe from
+              vtubers she manages through the vtNet network: Sumiyoi Sakura from
+              &quot;Ojou-sama Yomeiri Kousou&quot;, Senri Mana from
+              &quot;Princess Connect! Re:Dive&quot;, and Chloe from
               &quot;Detroit: Become Human&quot;.
             </p>
           </div>
@@ -405,7 +454,8 @@ export default function EmiiShion() {
               however; 18 days after her formal debut, circumstances came that
               had forced her to prematurely retire from AURORA -- with her
               presence in the shadows, unable to be seen; until the formal
-              handover through mutual connections to Aga, the First Maria🍃.
+              handover through mutual connections to Aga-chuu, the First
+              Maria🍃.
             </p>
             <br />
             <p>
