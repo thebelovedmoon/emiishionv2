@@ -275,6 +275,13 @@ export default function ArthurLeidram() {
               referrerPolicy="no-referrer"
             />
             <div>
+              <p
+                style={{
+                  fontSize: "0.75em",
+                }}
+              >
+                the Round Table Series, vol.1
+              </p>
               <h2>Where Fates Converge</h2>
               <br />
               <p>
@@ -298,6 +305,13 @@ export default function ArthurLeidram() {
               }}
             />
             <div>
+              <p
+                style={{
+                  fontSize: "0.75em",
+                }}
+              >
+                the Round Table Series, vol.2
+              </p>
               <h2>King Arthur, the Cursed Legend</h2>
               <br />
               <p>
@@ -321,6 +335,13 @@ export default function ArthurLeidram() {
               referrerPolicy="no-referrer"
             />
             <div>
+              <p
+                style={{
+                  fontSize: "0.75em",
+                }}
+              >
+                the Round Table Series, vol.3
+              </p>
               <h2>Exiles of the Round Table</h2>
               <br />
               <p>
@@ -342,6 +363,13 @@ export default function ArthurLeidram() {
               referrerPolicy="no-referrer"
             />
             <div>
+              <p
+                style={{
+                  fontSize: "0.75em",
+                }}
+              >
+                the Round Table Series, vol.4
+              </p>
               <h2>King Arthur&apos;s Respite</h2>
               <br />
               <p>
@@ -362,6 +390,13 @@ export default function ArthurLeidram() {
               referrerPolicy="no-referrer"
             />
             <div>
+              <p
+                style={{
+                  fontSize: "0.75em",
+                }}
+              >
+                the Round Table Series, vol.5
+              </p>
               <h2>Tristan and the Sealed Sword</h2>
               <br />
               <p>
@@ -384,6 +419,13 @@ export default function ArthurLeidram() {
               referrerPolicy="no-referrer"
             />
             <div>
+              <p
+                style={{
+                  fontSize: "0.75em",
+                }}
+              >
+                the Round Table Series, vol.6
+              </p>
               <h2>Camelot, the Cursed Kingdom</h2>
               <br />
               <p>
@@ -404,6 +446,13 @@ export default function ArthurLeidram() {
               referrerPolicy="no-referrer"
             />
             <div>
+              <p
+                style={{
+                  fontSize: "0.75em",
+                }}
+              >
+                the Round Table Series, vol.7
+              </p>
               <h2>Shackled Dawn</h2>
               <br />
               <p>
@@ -419,6 +468,13 @@ export default function ArthurLeidram() {
               referrerPolicy="no-referrer"
             />
             <div>
+              <p
+                style={{
+                  fontSize: "0.75em",
+                }}
+              >
+                the Round Table Series, vol.8
+              </p>
               <h2>The Grail Beneath the Sands</h2>
               <br />
               <p>
