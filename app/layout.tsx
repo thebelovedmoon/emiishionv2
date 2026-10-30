@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   title: "絵美紫苑とアーサー王👑🐣",
   description:
     "will you join the Reincarnated Phoenix Queen and the Cursed Legend on the Round Table?👑🐣",
+  authors: [{ name: "thebelovedmoon" }],
+  referrer: "no-referrer",
 };
 
 export default function RootLayout({

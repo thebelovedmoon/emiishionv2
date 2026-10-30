@@ -272,6 +272,7 @@ export default function ArthurLeidram() {
             <img
               src="https://pbs.twimg.com/media/FjWr_eBagAEUzvj?format=jpg&name=large"
               alt=""
+              referrerPolicy="no-referrer"
             />
             <div>
               <h2>Where Fates Converge</h2>
@@ -291,6 +292,7 @@ export default function ArthurLeidram() {
             <img
               src="https://pbs.twimg.com/media/F3s_Rv1a8AA9yjN?format=png&name=large"
               alt=""
+              referrerPolicy="no-referrer"
               style={{
                 objectPosition: "center 20%",
               }}
@@ -316,6 +318,7 @@ export default function ArthurLeidram() {
             <img
               src="https://pbs.twimg.com/media/GKPBjXPbMAA_1Xl?format=jpg&name=large"
               alt=""
+              referrerPolicy="no-referrer"
             />
             <div>
               <h2>Exiles of the Round Table</h2>
@@ -336,6 +339,7 @@ export default function ArthurLeidram() {
             <img
               src="https://pbs.twimg.com/media/GRYkkVZaYAABoeb?format=jpg&name=medium"
               alt=""
+              referrerPolicy="no-referrer"
             />
             <div>
               <h2>King Arthur&apos;s Respite</h2>
@@ -355,6 +359,7 @@ export default function ArthurLeidram() {
             <img
               src="https://pbs.twimg.com/media/Gbs1VJHbYAAocVS?format=jpg&name=large"
               alt=""
+              referrerPolicy="no-referrer"
             />
             <div>
               <h2>Tristan and the Sealed Sword</h2>
@@ -376,6 +381,7 @@ export default function ArthurLeidram() {
             <img
               src="https://pbs.twimg.com/media/GeHp1UQakAEtLrQ?format=jpg&name=large"
               alt=""
+              referrerPolicy="no-referrer"
             />
             <div>
               <h2>Camelot, the Cursed Kingdom</h2>
@@ -386,10 +392,16 @@ export default function ArthurLeidram() {
               </p>
             </div>
           </div>
-          <div className="LeidramChapter">
+          <div
+            className="LeidramChapter"
+            style={{
+              marginRight: "0",
+            }}
+          >
             <img
               src="https://pbs.twimg.com/media/G32iJ91W4AASgpz?format=jpg&name=large"
               alt=""
+              referrerPolicy="no-referrer"
             />
             <div>
               <h2>Shackled Dawn</h2>
@@ -397,6 +409,21 @@ export default function ArthurLeidram() {
               <p>
                 King Arthur has fallen. Yet the princess of the snow-bound realm
                 prayed in secret, for the return of her Dark King——
+              </p>
+            </div>
+          </div>
+          <div className="LeidramChapter">
+            <img
+              src="https://pbs.twimg.com/media/HVsMV9DbIAAhr9Q?format=jpg&name=large"
+              alt=""
+              referrerPolicy="no-referrer"
+            />
+            <div>
+              <h2>The Grail Beneath the Sands</h2>
+              <br />
+              <p>
+                Galahad, Knight of the Round Table, joins Marie Antoinette in a
+                quest for the legendary Grail beneath the sands—
               </p>
             </div>
           </div>

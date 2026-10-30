@@ -268,6 +268,7 @@ export default function EmiiShion() {
             }}
             src="https://pbs.twimg.com/media/GiAU6lybYAAvV0D?format=jpg&name=4096x4096"
             alt=""
+            referrerPolicy="no-referrer"
             title="aside from vtubing, she also became known as a cosplayer who goes by the title of the Incumbent First CosMaria&#x1f343;💐 -- a title that she proudly held unto since her first stint last year-end of 2023. notably, she's mostly known for her representation as the IRL version of her vtuber self."
           />
           <img
@@ -282,6 +283,7 @@ export default function EmiiShion() {
             }}
             src="https://pbs.twimg.com/media/GiAU6YZacAA_UyX?format=jpg&name=large"
             alt=""
+            referrerPolicy="no-referrer"
           />
           <img
             style={{
@@ -293,6 +295,7 @@ export default function EmiiShion() {
             }}
             src="https://pbs.twimg.com/media/GNcItWGaUAAY5TP?format=jpg&name=4096x4096"
             alt=""
+            referrerPolicy="no-referrer"
           />
         </div>
         <div className="seiyuuContent">
