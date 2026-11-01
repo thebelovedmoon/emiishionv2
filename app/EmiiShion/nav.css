@@ -67,6 +67,16 @@ button:hover {
   * {
     margin: 0;
   }
+  .seiyuuBackgroundCapture {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+  }
   .seiyuuHandwrite {
     position: absolute;
     width: 100%;
@@ -94,10 +104,15 @@ button:hover {
   .seiyuuContent {
     color: #3d374c;
     position: relative;
+    z-index: 1;
     width: calc(15rem * 3.125);
     max-width: 100%;
-    margin: 0 auto;
-    padding: 15rem 0;
+    margin: 15rem auto;
+    padding: calc(15rem * 0.25) calc(15rem * 0.125);
+    border-radius: 2.5rem;
+    &.liquidGlassFallback {
+      background-color: #ffffff40;
+    }
     * {
       display: block;
     }

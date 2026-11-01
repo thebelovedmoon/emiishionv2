@@ -22,6 +22,12 @@ const notoSerifDisplay = Noto_Serif_Display({
   style: ["italic"],
 });
 
+const benefactorGlassConfig = {
+  blurAmount: 0,
+  cornerRadius: 40,
+  zRadius: 40,
+};
+
 export default function EmiiShion() {
   const meetTheSeiyuuRef = useRef<HTMLDivElement>(null);
 
@@ -46,6 +52,49 @@ export default function EmiiShion() {
       ?.setAttribute("content", "#fed962");
 
     const mTS_el = meetTheSeiyuuRef.current;
+    let disposeLiquidGlass = false;
+    let liquidGlassInstance:
+      | {
+          destroy: () => void;
+          markChanged: (element?: HTMLElement) => void;
+        }
+      | undefined;
+    const benefactorCard =
+      mTS_el?.querySelector<HTMLElement>(".seiyuuContent");
+    const backgroundCapture = mTS_el?.querySelector<HTMLImageElement>(
+      ".seiyuuBackgroundCapture",
+    );
+    const onScroll = () => {
+      if (backgroundCapture && liquidGlassInstance) {
+        liquidGlassInstance.markChanged(backgroundCapture);
+      }
+    };
+
+    document.body.addEventListener("scroll", onScroll, { passive: true });
+
+    if (mTS_el && benefactorCard) {
+      import("@ybouane/liquidglass")
+        .then(({ LiquidGlass }) =>
+          LiquidGlass.init({
+            root: mTS_el,
+            glassElements: [benefactorCard],
+          }),
+        )
+        .then((instance) => {
+          if (disposeLiquidGlass) {
+            instance.destroy();
+          } else {
+            liquidGlassInstance = instance;
+            benefactorCard.classList.remove("liquidGlassFallback");
+          }
+        })
+        .catch((error: unknown) => {
+          console.error(
+            "Failed to initialize Liquid Glass for Emii Shion's Benefactor card:",
+            error,
+          );
+        });
+    }
 
     const obsvr1 = new IntersectionObserver(
       (entries) => {
@@ -105,6 +154,12 @@ export default function EmiiShion() {
     }
 
     return () => {
+      disposeLiquidGlass = true;
+      document.body.removeEventListener("scroll", onScroll);
+      if (liquidGlassInstance) {
+        benefactorCard?.classList.add("liquidGlassFallback");
+      }
+      liquidGlassInstance?.destroy();
       if (mTS_el) {
         obsvr1.unobserve(mTS_el);
       }
@@ -233,6 +288,13 @@ export default function EmiiShion() {
         </div>
       </div>
       <div ref={meetTheSeiyuuRef} className="meetTheSeiyuu">
+        <img
+          className="seiyuuBackgroundCapture"
+          src="https://vtresmarias.github.io/assets/images/backgrounds/vtm_bg_3.png"
+          alt=""
+          aria-hidden="true"
+          crossOrigin="anonymous"
+        />
         <div className="seiyuuHandwrite">
           <div
             className={notoSerifDisplay.className}
@@ -298,17 +360,11 @@ export default function EmiiShion() {
             referrerPolicy="no-referrer"
           />
         </div>
-        <div className="seiyuuContent">
-          <div
-            style={{
-              backgroundColor: "#ffffff40",
-              padding: "calc(15rem * 0.25) calc(15rem * 0.125)",
-              borderRadius: "1.5rem",
-              WebkitBackdropFilter: "blur(1.5rem)",
-              backdropFilter: "blur(1.5rem)",
-            }}
-          >
-            <div style={{ textAlign: "center" }}>
+        <div
+          className="seiyuuContent liquidGlassFallback"
+          data-config={JSON.stringify(benefactorGlassConfig)}
+        >
+          <div style={{ textAlign: "center" }}>
               <p>meet the Benefactor</p>
               <br />
               <h1>Aga-chuu</h1>
@@ -439,7 +495,6 @@ export default function EmiiShion() {
               &quot;Princess Connect! Re:Dive&quot;, and Chloe from
               &quot;Detroit: Become Human&quot;.
             </p>
-          </div>
         </div>
       </div>
       <div className="EmiiAURORA">

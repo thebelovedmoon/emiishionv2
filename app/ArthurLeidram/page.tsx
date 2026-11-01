@@ -13,6 +13,12 @@ const parisienne = Parisienne({
   weight: ["400"],
 });
 
+const benefactorGlassConfig = {
+  blurAmount: 0,
+  cornerRadius: 40,
+  zRadius: 40,
+};
+
 export default function ArthurLeidram() {
   const meetTheSeiyuuRef = useRef<HTMLDivElement>(null);
 
@@ -37,6 +43,49 @@ export default function ArthurLeidram() {
       ?.setAttribute("content", "#d6d8e5");
 
     const mTS_el = meetTheSeiyuuRef.current;
+    let disposeLiquidGlass = false;
+    let liquidGlassInstance:
+      | {
+          destroy: () => void;
+          markChanged: (element?: HTMLElement) => void;
+        }
+      | undefined;
+    const benefactorCard =
+      mTS_el?.querySelector<HTMLElement>(".seiyuuContent");
+    const backgroundCapture = mTS_el?.querySelector<HTMLImageElement>(
+      ".seiyuuBackgroundCapture",
+    );
+    const onScroll = () => {
+      if (backgroundCapture && liquidGlassInstance) {
+        liquidGlassInstance.markChanged(backgroundCapture);
+      }
+    };
+
+    document.body.addEventListener("scroll", onScroll, { passive: true });
+
+    if (mTS_el && benefactorCard) {
+      import("@ybouane/liquidglass")
+        .then(({ LiquidGlass }) =>
+          LiquidGlass.init({
+            root: mTS_el,
+            glassElements: [benefactorCard],
+          }),
+        )
+        .then((instance) => {
+          if (disposeLiquidGlass) {
+            instance.destroy();
+          } else {
+            liquidGlassInstance = instance;
+            benefactorCard.classList.remove("liquidGlassFallback");
+          }
+        })
+        .catch((error: unknown) => {
+          console.error(
+            "Failed to initialize Liquid Glass for Arthur Leidram's Benefactor card:",
+            error,
+          );
+        });
+    }
 
     const obsvr1 = new IntersectionObserver(
       (entries) => {
@@ -96,6 +145,12 @@ export default function ArthurLeidram() {
     }
 
     return () => {
+      disposeLiquidGlass = true;
+      document.body.removeEventListener("scroll", onScroll);
+      if (liquidGlassInstance) {
+        benefactorCard?.classList.add("liquidGlassFallback");
+      }
+      liquidGlassInstance?.destroy();
       if (mTS_el) {
         obsvr1.unobserve(mTS_el);
       }
@@ -157,6 +212,13 @@ export default function ArthurLeidram() {
         </h1>
       </div>
       <div ref={meetTheSeiyuuRef} className="meetTheSeiyuu">
+        <img
+          className="seiyuuBackgroundCapture"
+          src="https://cdn2.unrealengine.com/infinity-nikki-sea-of-stars-14-3840x2320-f77641ff783a.png"
+          alt=""
+          aria-hidden="true"
+          crossOrigin="anonymous"
+        />
         <div className="seiyuuHandwrite">
           <div
             style={{
@@ -200,62 +262,55 @@ export default function ArthurLeidram() {
             alt=""
           />
         </div>
-        <div className="seiyuuContent">
-          <div
-            style={{
-              backgroundColor: "#d6d8e540",
-              padding: "calc(15rem * 0.25) calc(15rem * 0.125)",
-              borderRadius: "1.5rem",
-              WebkitBackdropFilter: "blur(1.5rem)",
-              backdropFilter: "blur(1.5rem)",
-            }}
-          >
-            <div style={{ textAlign: "center" }}>
-              <p>meet the Benefactor</p>
+        <div
+          className="seiyuuContent liquidGlassFallback"
+          data-config={JSON.stringify(benefactorGlassConfig)}
+        >
+          <div style={{ textAlign: "center" }}>
+            <p>meet the Benefactor</p>
+            <br />
+            <h1>Nashimoto Hiori</h1>
+            <br />
+            <h3 style={{ fontStyle: "italic" }}>
+              a Seiyuu unlike any other,
               <br />
-              <h1>Nashimoto Hiori</h1>
-              <br />
-              <h3 style={{ fontStyle: "italic" }}>
-                a Seiyuu unlike any other,
-                <br />
-                with her dynamic beyond compare.
-              </h3>
-              <br />
-              <div className="seiyuuSocials">
-                <i
-                  className="bi bi-globe"
-                  title="amuleto profile"
-                  onClick={() => {
-                    window.open(
-                      "https://amuleto.jp/talents/nashimotohiori.html",
-                    );
-                  }}
-                ></i>
-                <i
-                  className="bi bi-twitter-x"
-                  title="X"
-                  onClick={() => {
-                    window.open("https://mobile.x.com/Hio_1o18");
-                  }}
-                ></i>
-              </div>
+              with her dynamic beyond compare.
+            </h3>
+            <br />
+            <div className="seiyuuSocials">
+              <i
+                className="bi bi-globe"
+                title="amuleto profile"
+                onClick={() => {
+                  window.open(
+                    "https://amuleto.jp/talents/nashimotohiori.html",
+                  );
+                }}
+              ></i>
+              <i
+                className="bi bi-twitter-x"
+                title="X"
+                onClick={() => {
+                  window.open("https://mobile.x.com/Hio_1o18");
+                }}
+              ></i>
             </div>
-            <br />
-            <p>
-              born on 18 Oct, Nashimoto Hiori has amassed quite a resume that
-              cemented herself as one of the prolific up-and-coming seiyuus of
-              the new generation. her ability to perform a wide range of
-              characters, from cute and bubbly to serious and intense, has made
-              her a sought-after talent in the anime and game industry.
-            </p>
-            <br />
-            <p>
-              alongside her stint as the Leidram, she is also known for a few
-              notable characters: Florine from &quot;Machine Child&quot;,
-              Okuzawa from &quot;Tamagawa Wants to Be a Cat&quot; and Nikki from
-              &quot;Infinity Nikki&quot;!
-            </p>
           </div>
+          <br />
+          <p>
+            born on 18 Oct, Nashimoto Hiori has amassed quite a resume that
+            cemented herself as one of the prolific up-and-coming seiyuus of
+            the new generation. her ability to perform a wide range of
+            characters, from cute and bubbly to serious and intense, has made
+            her a sought-after talent in the anime and game industry.
+          </p>
+          <br />
+          <p>
+            alongside her stint as the Leidram, she is also known for a few
+            notable characters: Florine from &quot;Machine Child&quot;,
+            Okuzawa from &quot;Tamagawa Wants to Be a Cat&quot; and Nikki from
+            &quot;Infinity Nikki&quot;!
+          </p>
         </div>
       </div>
       <div className="LeidramsPast">
