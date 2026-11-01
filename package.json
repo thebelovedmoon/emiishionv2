@@ -13,21 +13,23 @@
     "@pixiv/three-vrm": "^3.5.5",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
+    "@ybouane/liquidglass": "^1.0.3",
     "animejs": "^4.5.0",
-    "next": "^16.3.2",
-    "react": "^19.2.8",
-    "react-dom": "19.2.8",
-    "three": "^0.185.1"
+    "next": "^16.4.3",
+    "react": "^19.3.1",
+    "react-dom": "19.3.1",
+    "three": "^0.187.0"
   },
   "devDependencies": {
-    "@types/node": "^26.2.0",
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.4",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "eslint": "^10.9.0",
-    "eslint-config-next": "^16.3.2",
-    "typescript": "7.0.2"
+    "eslint-config-next": "^16.4.3",
+    "typescript": "6.0.3"
   },
   "allowScripts": {
-    "unrs-resolver@1.12.2": true
+    "unrs-resolver@1.12.2": true,
+    "@ybouane/liquidglass@1.0.3": true
   }
 }
