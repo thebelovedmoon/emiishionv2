@@ -50,8 +50,7 @@ export default function ArthurLeidram() {
           markChanged: (element?: HTMLElement) => void;
         }
       | undefined;
-    const benefactorCard =
-      mTS_el?.querySelector<HTMLElement>(".seiyuuContent");
+    const benefactorCard = mTS_el?.querySelector<HTMLElement>(".seiyuuContent");
     const backgroundCapture = mTS_el?.querySelector<HTMLImageElement>(
       ".seiyuuBackgroundCapture",
     );
@@ -282,9 +281,7 @@ export default function ArthurLeidram() {
                 className="bi bi-globe"
                 title="amuleto profile"
                 onClick={() => {
-                  window.open(
-                    "https://amuleto.jp/talents/nashimotohiori.html",
-                  );
+                  window.open("https://amuleto.jp/talents/nashimotohiori.html");
                 }}
               ></i>
               <i
@@ -299,16 +296,16 @@ export default function ArthurLeidram() {
           <br />
           <p>
             born on 18 Oct, Nashimoto Hiori has amassed quite a resume that
-            cemented herself as one of the prolific up-and-coming seiyuus of
-            the new generation. her ability to perform a wide range of
-            characters, from cute and bubbly to serious and intense, has made
-            her a sought-after talent in the anime and game industry.
+            cemented herself as one of the prolific up-and-coming seiyuus of the
+            new generation. her ability to perform a wide range of characters,
+            from cute and bubbly to serious and intense, has made her a
+            sought-after talent in the anime and game industry.
           </p>
           <br />
           <p>
             alongside her stint as the Leidram, she is also known for a few
-            notable characters: Florine from &quot;Machine Child&quot;,
-            Okuzawa from &quot;Tamagawa Wants to Be a Cat&quot; and Nikki from
+            notable characters: Florine from &quot;Machine Child&quot;, Okuzawa
+            from &quot;Tamagawa Wants to Be a Cat&quot; and Nikki from
             &quot;Infinity Nikki&quot;!
           </p>
         </div>
@@ -338,7 +335,9 @@ export default function ArthurLeidram() {
                 the Round Table Series, vol.1
               </p>
               <h2>Where Fates Converge</h2>
-              <br />
+              <div
+                style={{ width: "100%", height: "0.5em", padding: "0" }}
+              ></div>
               <p>
                 Guided by the mysterious witch, Finn arrived at the distant
                 royal capital guarded by the cursed Knights of the Round Table.
@@ -368,7 +367,9 @@ export default function ArthurLeidram() {
                 the Round Table Series, vol.2
               </p>
               <h2>King Arthur, the Cursed Legend</h2>
-              <br />
+              <div
+                style={{ width: "100%", height: "0.5em", padding: "0" }}
+              ></div>
               <p>
                 After a hundred years, King Arthur has reached the cursed land
                 of Avalon. Accompanying her are the mightiest knight, Lancelot,
@@ -398,7 +399,9 @@ export default function ArthurLeidram() {
                 the Round Table Series, vol.3
               </p>
               <h2>Exiles of the Round Table</h2>
-              <br />
+              <div
+                style={{ width: "100%", height: "0.5em", padding: "0" }}
+              ></div>
               <p>
                 The prison island floating at the western edge, and two former
                 Knights of the Round Table. Time, which had stood still, begins
@@ -426,7 +429,9 @@ export default function ArthurLeidram() {
                 the Round Table Series, vol.4
               </p>
               <h2>King Arthur&apos;s Respite</h2>
-              <br />
+              <div
+                style={{ width: "100%", height: "0.5em", padding: "0" }}
+              ></div>
               <p>
                 King Arthur, transported to the sea by the Archmage. There, an
                 impossible figure appears—
@@ -453,7 +458,9 @@ export default function ArthurLeidram() {
                 the Round Table Series, vol.5
               </p>
               <h2>Tristan and the Sealed Sword</h2>
-              <br />
+              <div
+                style={{ width: "100%", height: "0.5em", padding: "0" }}
+              ></div>
               <p>
                 The Knights of the Round Table reunite with the sorrowful knight
                 Tristan in the royal capital. The Saintess encounters the girl
@@ -482,7 +489,9 @@ export default function ArthurLeidram() {
                 the Round Table Series, vol.6
               </p>
               <h2>Camelot, the Cursed Kingdom</h2>
-              <br />
+              <div
+                style={{ width: "100%", height: "0.5em", padding: "0" }}
+              ></div>
               <p>
                 The true purpose of King Arthur, the destination of her journey.
                 The Round Table Saga reaches its grand conclusion!
@@ -509,14 +518,21 @@ export default function ArthurLeidram() {
                 the Round Table Series, vol.7
               </p>
               <h2>Shackled Dawn</h2>
-              <br />
+              <div
+                style={{ width: "100%", height: "0.5em", padding: "0" }}
+              ></div>
               <p>
                 King Arthur has fallen. Yet the princess of the snow-bound realm
                 prayed in secret, for the return of her Dark King——
               </p>
             </div>
           </div>
-          <div className="LeidramChapter">
+          <div
+            className="LeidramChapter"
+            style={{
+              marginRight: "0",
+            }}
+          >
             <img
               src="https://pbs.twimg.com/media/HVsMV9DbIAAhr9Q?format=jpg&name=large"
               alt=""
@@ -531,10 +547,36 @@ export default function ArthurLeidram() {
                 the Round Table Series, vol.8
               </p>
               <h2>The Grail Beneath the Sands</h2>
-              <br />
+              <div
+                style={{ width: "100%", height: "0.5em", padding: "0" }}
+              ></div>
               <p>
                 Galahad, Knight of the Round Table, joins Marie Antoinette in a
                 quest for the legendary Grail beneath the sands—
+              </p>
+            </div>
+          </div>
+          <div className="LeidramChapter">
+            <img
+              src="https://pbs.twimg.com/media/HX8JlBKbYAAfDx_?format=jpg&name=large"
+              alt=""
+              referrerPolicy="no-referrer"
+            />
+            <div>
+              <p
+                style={{
+                  fontSize: "0.75em",
+                }}
+              >
+                the Round Table Series, vol.9
+              </p>
+              <h2>Arthur Leidram&apos;s Secret Mission</h2>
+              <div
+                style={{ width: "100%", height: "0.5em", padding: "0" }}
+              ></div>
+              <p>
+                Lancelot has orders to bring down the cold-blooded Arthur
+                Leidram—
               </p>
             </div>
           </div>
